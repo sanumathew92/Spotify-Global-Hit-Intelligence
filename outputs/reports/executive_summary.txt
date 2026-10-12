@@ -1,0 +1,24 @@
+
+Spotify Global Hit Intelligence analyzes more than 8,000 songs from the Spotify Global Weekly Chart to identify patterns associated 
+with chart success, longevity and lyrical characteristics.
+
+Global chart success is highly concentrated. Most songs experience relatively short chart runs, while a small exceptional group
+achieves substantially longer chart presence and higher cumulative streaming performance.
+
+Three performance segments were identified:
+
+1. Short-lived / low chart penetration
+2. Moderate longevity / mid-level performance
+3. Exceptional longevity / high performance
+
+Only approximately 7.4% of songs belong to the exceptional segment.
+
+Lyrics NLP analysis identified measurable signals involving vocabulary size, lexical diversity, repetition, sentiment, topic structure and lyric length.
+
+Machine-learning models were used to identify patterns asscociated with high total streams, long-running songs and Top-10 achievement.
+
+SHAP explainability showed that the drivers of these outcomes are related but not identical, Lyric topic, vocabulary structure, lexical diversity, repetition, word characteristics and sentiment were among the important predictive signals.
+
+The project demonstrates that global music success is multi-dimensional and benefits from combining chart analytics, artist analytics, NLP, machine learning, segmentation and explainable AI.
+
+Important limitation: these findings represent model associations, not causal relationships, and lifetime chart metrics must not be used as predictors of the same lifetime outcomes.

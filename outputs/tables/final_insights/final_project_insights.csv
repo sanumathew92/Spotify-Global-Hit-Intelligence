@@ -1,0 +1,8 @@
+Category,Insight
+Chart Performance,"Global chart performance is highly concentrated.Most songs have relatively short chart runs, while a small group achieves exceptionally long-term chart presence."
+Streaming Success,"Cumulative streams are strongly associated with chart longevity, but peak position and longevity capture different dimensions of success."
+Exceptional Performers,"Only 7.37% of songs belong to the exceptional-performance segment, characterized by approximately 54 median chart-weeks, strong Top-10 presence, and substantially higher streaming performance."
+Artist Performance,"Artist catalog size is important, but catalog volume alone does not represent consistency. Median song performance provide a more robust view of repeat success."
+Lyrics Intelligence,"Lyrics contain measurable signals associated with chart outcomes, including vocabulary size, lexical diversity, repetition, sentiment, and topic characteristics."
+Machine Learning,Machine-learning models can identify patterns asscociated with different definitions of success using lyrical features.
+Explainability,"SHAP analysis shows that the drivers of high streaming, longevity, and Top-10 achievement are related but not identical."

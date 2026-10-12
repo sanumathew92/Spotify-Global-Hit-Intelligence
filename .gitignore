@@ -1,0 +1,84 @@
+
+# ==========================================
+# Python environments and cache
+# ==========================================
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.pyo
+
+# ==========================================
+# Jupyter
+# ==========================================
+.ipynb_checkpoints/
+
+# ==========================================
+# Raw data - keep private / do not upload
+# ==========================================
+data/raw/*
+!data/raw/README.md
+
+# Processed data:
+# Ignore by default; explicitly allow only files
+# that the deployed app actually requires.
+data/processed/*
+!data/processed/README.md
+
+# ==========================================
+# Models
+# Ignore large/local model artifacts by default.
+# Allow only required deployment models if needed.
+# ==========================================
+models/
+!models/README.md
+
+# ==========================================
+# Generated outputs
+# Ignore figures by default.
+# Allow selected dashboard tables and reports.
+# ==========================================
+
+# Generated outputs
+outputs/figures/*
+outputs/tables/*
+
+# Allow required dashboard tables
+!outputs/tables/final_insights/
+outputs/tables/final_insights/*.csv
+!outputs/tables/final_insights/*.csv
+
+!outputs/tables/machine_learning/
+outputs/tables/machine_learning/*.csv
+!outputs/tables/machine_learning/*.csv
+
+# Executive summary
+outputs/reports/*
+!outputs/reports/executive_summary.txt
+
+# Notebook training artifacts
+notebook/catboost_info/
+notebook/outputs/
+
+
+# ==========================================
+# Training artifacts
+# ==========================================
+notebook/catboost_info/
+notebook/outputs/
+
+# ==========================================
+# Secrets and local configuration
+# ==========================================
+.env
+.env.*
+.streamlit/secrets.toml
+
+# ==========================================
+# IDE and operating system
+# ==========================================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,6 @@
+Area,Recommendation
+A&R / Talent Discovery,Use lyrical and content signals as an additional input for early hit screening.
+Artist Development,Compare artist catalogs using median performance and repeat-hit indicators.
+Content Strategy,"Evaluate topic, vocabulary, repetition and sentiment together rather than individually."
+Song Evaluation,Use multiple success dimensions instead of relying only on peak chart position.
+Decision Support,Use SHAP explanations to make model predictions interpretable.

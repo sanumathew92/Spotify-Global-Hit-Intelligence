@@ -1,0 +1,4 @@
+Target,Top Driver 1,Top Driver 2,Top Driver 3,Top Driver 4,Top Driver 5
+High Total Streams,Lyric Topic,Vocabulary Size,Average Word Length,Sentiment Subjectivity,Lexical Diversity
+Long-Running Songs,Lyric Topic,Lexical Diversity,Vocabulary Size,Lyric Repetition,Average Word Length
+Top-10 Reached,Dominant Topic 5,Lyrics Character Count,Meaningful Word Count,Lyric Repetition,Lexical Diversity
