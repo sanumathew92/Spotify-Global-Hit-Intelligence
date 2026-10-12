@@ -63,7 +63,7 @@ def show_table(path, title):
 
 
     if data.empty:
-        st.info(f"No readable data available: {path_name}")
+        st.info(f"No readable data available: {path}")
         return 
 
     st.caption(
@@ -84,7 +84,7 @@ def show_figure(path, caption):
         )
         return True 
 
-    st.info("Figure not found: {path_name}")
+    st.info(f"Figure not found: {path.name}")
     return False 
 
 
@@ -96,7 +96,7 @@ importance_files = {
     "High Total Streams":
         "shap_feature_importance_high_total_streams.csv",
     "Long-Running Songs":
-        "shap_feature_imprtance_long_running_songs.csv",
+        "shap_feature_importance_long_running_songs.csv",
     "Top-10 Achievement":
         "shap_feature_importance_top10_reached.csv",
 }
@@ -115,7 +115,7 @@ feature_group_files = {
     "General feature groups":
         "shap_feature_group_importance.csv",
     "Top-10 feature groups":
-        "shap_fetaure_group_importance_t10.csv",
+        "shap_feature_group_importance_t10.csv",
 }
 
 

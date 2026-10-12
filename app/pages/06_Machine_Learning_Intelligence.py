@@ -237,7 +237,7 @@ st.header("3. Saved Performance Visualizations")
 
 figure_options = {
     "Top-10 confusion matrix":
-        FIGURE_DIR / "topic_confusion_matrix.png",
+        FIGURE_DIR / "topic10_confusion_matrix.png",
     "High-stream confusion matrix":
         FIGURE_DIR / "high_stream_confusion_matrix.png",
     "Longevity confusion matrix":
@@ -245,7 +245,7 @@ figure_options = {
     "Top-10 ROC curves":
         FIGURE_DIR / "top10_roc_curves.png",
     "High-stream ROC curves":
-        FIGURE_DIR / "high_streams_roc_curve.png",
+        FIGURE_DIR / "high_stream_roc_curves.png",
     "Longevity ROC curves":
         FIGURE_DIR / "longevity_roc_curves.png",
     "Top-10 precision-recall curves":
@@ -443,7 +443,7 @@ st.header("5. Test Set Predictions")
 
 prediction_files = {
     "Top-10 predictions":
-        ML_TABLE_DIR / "top_10_test_predictions.csv",
+        ML_TABLE_DIR / "top10_test_predictions.csv",
     "High-stream predictions":
         ML_TABLE_DIR / "high_stream_test_predictions.csv",
     "Longevity predictions":

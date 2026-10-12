@@ -1,0 +1,7 @@
+parameter,value
+target,long_running_song
+model,GradientBoostingClassifier
+train_rows,6446
+test_rows,1612
+num_original_features,12
+num_transformed_features,19

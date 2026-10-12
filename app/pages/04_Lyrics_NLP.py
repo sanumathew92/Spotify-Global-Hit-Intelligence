@@ -31,15 +31,17 @@ nlp_df["record_id"] = np.arange(len(nlp_df))
 # Ensure lyrics availability comed from the cleaned dataset
 
 if "lyrics_available" not in df.columns:
-
-    df["lyrics_available"] = (
-        df["lyrics"]
-        .fillna("")
-        .astype(str)
-        .str.strip()
-        .str.len()
-        .gt(0)
-    )
+    if "lyrics" in df.columns:
+        df["lyrics_available"] = (
+            df["lyrics"]
+            .fillna("")
+            .astype(str)
+            .str.strip()
+            .str.len()
+            .gt(0)
+        )
+    else:
+        df["lyrics_available"] = False
 
 
 # NLP columns available in the verified NLP dataset 
@@ -74,23 +76,26 @@ lyrics_data = df.merge(
 # Ensure Core Lyric Features exist
 
 if "lyrics_char_count" not in lyrics_data.columns:
+    if "lyrics" in lyrics_data.columns:
+        lyrics_text = (
+            lyrics_data["lyrics"].fillna("").astype(str)
+        )
+        lyrics_data["lyrics_char_count"] = lyrics_text.str.len()
+    else:
+        lyrics_data["lyrics_char_count"] = 0
 
-    lyrics_data["lyrics_char_count"] = (
-        lyrics_data["lyrics"]
-        .fillna("")
-        .astype(str)
-        .str.len()
-    )
 
 if "lyrics_word_count" not in lyrics_data.columns:
+    if "lyrics" in lyrics_data.columns:
+        lyrics_text = (
+            lyrics_data["lyrics"].fillna("").astype(str)
+        )
+        lyrics_data["lyrics_word_count"] = (
+            lyrics_text.str.split().str.len()
+        )
+    else:
+        lyrics_data["lyrics_word_count"] = 0
 
-    lyrics_data["lyrics_word_count"] = (
-        lyrics_data["lyrics"]
-        .fillna("")
-        .astype(str)
-        .str.split()
-        .str.len()
-    )
 
 # DERIVED NLP FEATURES
 

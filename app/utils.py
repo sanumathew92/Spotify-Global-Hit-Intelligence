@@ -5,11 +5,9 @@ import streamlit as st
 
 # PROJECT PATHS 
 
-PROJECT_ROOT = Path(
-     r"C:\Users\Sanu\OneDrive\Desktop\Spotify-Global-Hit-Intelligence"
-)
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
-DATA_DIR = PROJECT_ROOT / "data" / "processed"
+DATA_DIR = PROJECT_ROOT / "data" / "deployment"
 OUTPUT_DIR = PROJECT_ROOT / "outputs"
 FIGURE_DIR = OUTPUT_DIR / "figures"
 TABLE_DIR = OUTPUT_DIR / "tables"

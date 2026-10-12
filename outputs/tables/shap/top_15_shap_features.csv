@@ -1,0 +1,16 @@
+feature,mean_abs_shap,importance_pct,feature_group
+_lyric_repetition_ratio,0.19428035122794654,15.72579218376948,Other
+_dominant_topic_4,0.16527069940150158,13.37764038631401,Lyric Topic
+_lyrics_unique_word_count,0.1540024733129378,12.465547214624326,Vocabulary Size
+_avg_word_length,0.1065794336309853,8.62694561622572,Average Word Length
+_sentiment_subjectivity,0.09436895955041125,7.638583300413774,Sentiment Subjectivity
+_lexical_diversity,0.08901766663404478,7.205429253772586,Lexical Diversity
+_meaningful_word_count,0.07543152817138214,6.105715419134341,Meaningful Vocabulary
+_dominant_topic_8,0.07146983961902365,5.785041246592251,Lyric Topic
+_sentiment_intensity,0.05967647105339099,4.830441041077176,Sentiment Intensity
+_lyrics_word_count,0.05322631587382069,4.308340894223027,Lyrics Length
+_topic_probability,0.04573701078359857,3.702127992582263,Topic Confidence
+_dominant_topic_7,0.0441514668238153,3.573788020721043,Lyric Topic
+_sentiment_polarity,0.03444191498722974,2.7878598843212266,Sentiment Polarity
+_lyrics_char_count,0.023741336566221745,1.9217142785956893,Lyrics Length
+_dominant_topic_6,0.01869482082893354,1.5132300585748806,Lyric Topic

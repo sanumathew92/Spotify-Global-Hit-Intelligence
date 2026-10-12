@@ -61,14 +61,12 @@ st.set_page_config(
 
 from pathlib import Path 
 
-PROJECT_ROOT = Path(
-    r"C:\Users\Sanu\OneDrive\Desktop\Spotify-Global-Hit-Intelligence"
-)
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
 SEGMENTATION_PATH = (
     PROJECT_ROOT
     / "data"
-    / "processed"
+    / "deployment"
     / "spotify_hit_segments.csv"
 )
 

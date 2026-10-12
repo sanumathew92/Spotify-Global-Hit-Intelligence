@@ -15,55 +15,67 @@ __pycache__/
 .ipynb_checkpoints/
 
 # ==========================================
-# Raw data - keep private / do not upload
+# Raw data - never upload raw datasets
 # ==========================================
 data/raw/*
 !data/raw/README.md
 
-# Processed data:
-# Ignore by default; explicitly allow only files
-# that the deployed app actually requires.
+# ==========================================
+# Processed data - ignore by default
+# ==========================================
 data/processed/*
 !data/processed/README.md
 
 # ==========================================
-# Models
-# Ignore large/local model artifacts by default.
-# Allow only required deployment models if needed.
+# Deployment data - allow only required CSVs
 # ==========================================
-models/
+data/deployment/*
+!data/deployment/spotify_global_chart_totals_lyrics_cleaned.csv
+!data/deployment/spotify_lyrics_nlp_features.csv
+!data/deployment/spotify_hit_segments.csv
+
+# ==========================================
+# Models
+# ==========================================
+models/*
 !models/README.md
 
 # ==========================================
-# Generated outputs
-# Ignore figures by default.
-# Allow selected dashboard tables and reports.
+# Generated figures - allow dashboard assets
 # ==========================================
-
-# Generated outputs
 outputs/figures/*
+!outputs/figures/machine_learning/
+!outputs/figures/model_comparison/
+!outputs/figures/shap/
+
+# ==========================================
+# Generated tables - ignore by default
+# ==========================================
 outputs/tables/*
 
-# Allow required dashboard tables
+# Final insights tables
 !outputs/tables/final_insights/
-outputs/tables/final_insights/*.csv
+outputs/tables/final_insights/*
 !outputs/tables/final_insights/*.csv
 
+# Machine learning tables
 !outputs/tables/machine_learning/
-outputs/tables/machine_learning/*.csv
+outputs/tables/machine_learning/*
 !outputs/tables/machine_learning/*.csv
 
-# Executive summary
+# SHAP tables
+!outputs/tables/shap/
+outputs/tables/shap/*
+!outputs/tables/shap/*.csv
+
+# ==========================================
+# Reports
+# ==========================================
 outputs/reports/*
 !outputs/reports/executive_summary.txt
 
-# Notebook training artifacts
-notebook/catboost_info/
-notebook/outputs/
-
-
 # ==========================================
-# Training artifacts
+# Notebook training artifacts
 # ==========================================
 notebook/catboost_info/
 notebook/outputs/
